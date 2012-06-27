@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="Author" content="Igor Rzegocki" />
+    <meta name="Copyright" content="Copyright (c) 2010 Igor Rzegocki" />
+
+    <meta name="Robots" content="index, follow" />
+    <meta name="Revisit-after" content="7 days" />
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link href="css/ospa.css" media="screen" rel="Stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="js/ospa.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="top">
+            <div id="logo">
+                <a href="/">
+                    <strong>OspaWietrzna.pl</strong>
+                    <cite>Chronię moje dziecko przed ospą wietrzną</cite>
+                </a>
+            </div>
+            <ul id="menu">
+                <li class="mail"><a href="">Powiadom znajomego</a></li>
+                <li class="font"><a id="fontsize" href="#">rozmiar czcionki</a></li>
+                <li class="print"><a id="printlink" href="" title="Po zmianie, wciśnij ESC by przywrócić poprzedni styl">drukuj</a></li>
+            </ul>
+            <ul id="tabs">
+                <li class="m1">
+                    <a href="">Co warto wiedzieć</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="ospa_wietrzna.html">Ospa wietrzna</a></li>
+                            <li><a href="ciaza.html">Ospa a ciąża</a></li>
+                            <li><a href="polpasiec.html">Ospa a półpasiec</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="m2"><a href="profilaktyka.html">Profilaktyka</a></li>
+                <li class="m3"><a href="fakty_i_mity.html">Fakty i mity</a></li>
+                <li class="m4"><a href="czy_twoje_dziecko_jest_chore.html">Kiedy dziecko choruje</a></li>
+                <li class="m5"><a href="komu_grozi.html">Komu grozi ospa</a></li>
+            </ul>
+            <div class="header header-d1">
+                <h1>Znajdź punkt szczepień</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="">OspaWietrzna.pl</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div class="article">
+                <h2>Wpisz nazwę miejscowości w której mieszkasz</h2>
+                <div class="search">
+                    <input type="text" name="search" id="search" class="text" />
+                    <a href="" class="submit"><span>Szukaj miasta</span></a>
+                    <ul class="search-results" id="search-results" style="display: none;">
+                        <li>
+                            <strong>Szpital im. Jana Pawła II pod wezwaniem Marii Panny</strong>
+                            <address>ul. Ogrodowa 233, 12-234 Warszawa<br />
+                            tel. +22 456 78 90<br />
+                            fax: +22 456 78 91</address>
+                        </li>
+                        <li>
+                            <strong>Szpital im. Jana Pawła II pod wezwaniem Marii Panny</strong>
+                            <address>ul. Ogrodowa 233, 12-234 Warszawa<br />
+                            tel. +22 456 78 90<br />
+                            fax: +22 456 78 91</address>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="left">
+                <p>Wykonawca <a href="">Active Pharma Sp. z o.o.</a></p>
+                <p>Stosujemy się do <a href="">standardu HONcode</a> dla wiarygodnej informacji zdrowotnej: <a href="">sprawdź tutaj</a>.</p>
+            </div>
+            <div class="right">
+                <ul class="notes">
+                    <li><a href="regulamin.html">Regulamin</a></li>
+                    <li><a href="">Nota prawna</a></li>
+                    <li><a href="">Mapa serwisu</a></li>
+                </ul>
+                <ul class="external">
+                    <li class="happy"><a href="">ObejmijMnieSzczesciem.pl</a></li>
+                    <li class="rota"><a href="">PowstrzymajRotawirusy.pl</a></li>
+                    <li class="presc"><a href="">Szczepienia.pl</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+//<![[CDATA
+    var cities = [
+        'Kępno',
+        'Kętrzyn',
+        'Kęty',
+        'Kielce',
+        'Kietrz',
+        'Kisielice',
+        'Kleczew',
+        'Kleszczele',
+        'Kluczbork'
+    ]
+    $('#search').autocomplete({source: cities, select: function(e) { $('#search-results').show(); } });
+//]]>
+</script>
+</body>
+</html>
